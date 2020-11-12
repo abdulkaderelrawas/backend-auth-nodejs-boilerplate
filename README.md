@@ -58,7 +58,7 @@ In order to install and activate the boilerplate, follow the instructions below 
 "scripts": {
 "start": "node src/server", // start the server
 "dev": "nodemon src/server", // watches the server
-"data-import": "node src/utils/seeder", // refresh & import fake data
-"data-destroy": "node src/utils/seeder -d" // destroys all DB's data
+"data-import": "node src/utils/seeder/seeder", // refresh & import fake data
+"data-destroy": "node src/utils/seeder/seeder -d" // destroys all DB's data
 },
 ```
