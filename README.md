@@ -2,7 +2,7 @@
 
 ## Project's Structure
 
-```bash
+```md
 ├──src
 |   ├── config
 |   |      ├── db.js
