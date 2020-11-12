@@ -1,0 +1,29 @@
+{
+  "name": "backend-auth-nodejs",
+  "version": "1.0.0",
+  "description": "backend boilerplate using nodejs & express",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server",
+    "dev": "nodemon src/server",
+    "data-import": "node src/utils/seeder",
+    "data-destroy": "node src/utils/seeder -d"
+  },
+  "keywords": [
+    "moemo"
+  ],
+  "author": "Abdulkader El Rawas",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
