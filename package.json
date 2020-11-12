@@ -7,8 +7,8 @@
   "scripts": {
     "start": "node src/server",
     "dev": "nodemon src/server",
-    "data-import": "node src/utils/seeder",
-    "data-destroy": "node src/utils/seeder -d"
+    "data-import": "node src/utils/seeder/seeder",
+    "data-destroy": "node src/utils/seeder/seeder -d"
   },
   "keywords": [
     "moemo"

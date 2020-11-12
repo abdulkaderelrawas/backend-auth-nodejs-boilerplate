@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
-import users from './data/users.js';
-import User from './models/userModel.js';
-import connectDB from './config/db.js';
+import users from './fakeData.js';
+import User from '../../models/userModel.js';
+import connectDB from '../../config/db.js';
 
 dotenv.config();
 
@@ -13,11 +13,11 @@ const importData = async () => {
 
     await User.insertMany(users);
 
-    console.log('Data Imported!'.green.inverse);
+    console.log('Data Imported!');
 
     process.exit();
   } catch (error) {
-    console.error(`${error}`.red.inverse);
+    console.error(`${error}`);
 
     process.exit(1);
   }
@@ -27,11 +27,11 @@ const destroyData = async () => {
   try {
     await User.deleteMany();
 
-    console.log('Data Detroyed!'.red.inverse);
+    console.log('Data Detroyed!');
 
     process.exit();
   } catch (error) {
-    console.error(`${error}`.red.inverse);
+    console.error(`${error}`);
 
     process.exit(1);
   }
